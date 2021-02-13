@@ -1,0 +1,50 @@
+<div class="row new-department-view">
+
+    <app-errormessage *ngIf="errorMessage" [message]=errorMessageContent></app-errormessage>
+    <app-successmessage *ngIf="successMessage" [message]=successMessageContent></app-successmessage>
+
+    <div class="new-department">
+        <h3>Departments > Create</h3>
+    </div>
+
+    <div class="new-department-form">
+        <form (ngSubmit)="createDepartment()">
+            <fieldset class="border p-3 department-info-filedset">
+                <legend class="w-auto">Department Info</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Enter Name" [(ngModel)]="name">
+                </div>
+                <div class="form-group">
+                    <label for="apiKey">Api Key</label>
+                    <input type="text" class="form-control" id="apiKey" name="apiKey" aria-describedby="apiKey" placeholder="Enter Api Key" [(ngModel)]="apiKey">
+                </div>
+            </fieldset>
+
+            <fieldset class="border p-3">
+                <legend class="w-auto">Department Contact Person</legend>
+                <div class="form-group">
+                    <label for="contactPersonName">Name</label>
+                    <input type="text" class="form-control" id="contactPersonName" name="contactPersonName" aria-describedby="contactPersonName"
+                        placeholder="Enter Contact Person Name" [(ngModel)]="contactPersonName">
+                </div>
+                <div class="form-group">
+                    <label for="contactPersonEmail">Email</label>
+                    <input type="email" class="form-control" id="contactPersonEmail" name="contactPersonEmail" aria-describedby="contactPersonEmail"
+                        placeholder="Enter Contact Person Email" [(ngModel)]="contactPersonEmail">
+                </div>
+                <div class="form-group">
+                    <label for="contactPersonTelephone">Telephone</label>
+                    <input type="text" class="form-control" id="contactPersonTelephone" name="contactPersonTelephone" aria-describedby="contactPersonTelephone"
+                        placeholder="Enter Contact Person Telephone" [(ngModel)]="contactPersonTelephone">
+                </div>
+
+            </fieldset>
+
+            <div class="buttons-submit">
+                <button class="btn btn-outline-secondary department-submit-btn" routerLink="/departments">Cancel</button>
+                <button type="submit" class="btn btn-outline-success department-submit-btn">Add Department</button>
+            </div>
+        </form>
+    </div>
+</div>

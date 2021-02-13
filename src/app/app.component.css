@@ -1,0 +1,62 @@
+@media screen and (max-width: 576px) {
+    .app-main {
+      background-color: whitesmoke;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+    }
+  
+    .header {
+      background-color: #1c7fb8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 10%;
+      max-width: 100%;
+    }
+  
+    .content {
+      max-width: 100%;
+      position: fixed;
+      top: 10%;
+      left: 0;
+      bottom: 0;
+      overflow: scroll;
+    }
+
+  }
+  
+  @media screen and (min-width: 576px) {
+    .app-main {
+      background-color: whitesmoke;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+    }
+  
+    .header {
+      background-color: #1c7fb8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 10%;
+      max-width: 100%;
+    }
+  
+    .content {
+      max-width: 100%;
+      position: fixed;
+      top: 10%;
+      left: 0;
+      bottom: 0;
+      overflow: scroll;
+    }
+  }

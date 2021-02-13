@@ -1,0 +1,49 @@
+.new-department-view {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.new-department {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.new-department-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.status-box {
+    margin-bottom: 15px;
+}
+
+.department-submit-btn {
+    width: 100%;
+    margin: 2px;
+}
+
+.border {
+    border: 1px solid darkgray !important;
+}
+
+.department-info-filedset {
+    margin-bottom: 5px;
+}
+
+.buttons-submit {
+    margin-top: 10px;
+    display: flex;
+}
